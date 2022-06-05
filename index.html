@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-  <meta charset="utf-8">
-  <title>DIC cafe</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>DIC cafe</title>
+    <!-- linkタグを追加 -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+  </head>
 
 <body>
   <header>
     <nav>
       <!-- グローバルナビゲーション -->
+      <a href="index.html"><img src="images/sample_logo_k.png"></a>
       <ul>
-        <a href="#">
+        <a href="index.html">
           <li>Home</li>
         </a>
         <a href="#">
@@ -23,10 +26,12 @@
       </ul>
     </nav>
     <h1>DIC Coffee</h1>
+    <p>natural organic coffee</p>
   </header>
   <section>
-    <article>
+    <article class="section_inner">
       <h1>CONCEPT</h1>
+      <p>DIC Coffeeのこだわり</p>
       <p>
         DIC Coffeeのコーヒーはルワンダ産のコーヒー豆<strong>「DIC Beans」</strong>を使用しています。<br>
         直接契約したコーヒー農家から仕入れております。<br>
@@ -35,41 +40,51 @@
         <small>※Cafeは株式会社DIVE INTO CODEが農場と契約、運営しています。</small>
       </p>
       <img src="images/sample_concept.jpg">
-    </article>
+    </article class="section_inner">
     <!-- ここからMENU -->
     <article>
       <h1>MENU</h1>
       <section>
         <h1>Recommended menu</h1>
         <ul>
-          <li>
-            <h2>ブルーベリーパンケーキ</h2>
-            <p>フレッシュなブルーベリーをトッピングしたパンケーキです</p>
-            <p>¥1,200</p>
-          </li>
-          <li>
-            <h2>ストロベリーパンケーキ</h2>
-            <p>イチゴとはちみつのコラボレーションをお楽しみください</p>
-            <p>¥1,300</p>
-          </li>
+          <div>
+            <li>
+              <img src="images/sample_pancake1.jpg">
+              <h2>ブルーベリーパンケーキ</h2>
+              <p>フレッシュなブルーベリーをトッピングしたパンケーキです</p>
+              <p>¥1,200</p>
+            </li>
+          </div>
+          <div>
+            <li>
+              <img src="images/sample_pancake2.jpg">
+              <h2>ストロベリーパンケーキ</h2>
+              <p>イチゴとはちみつのコラボレーションをお楽しみください</p>
+              <p>¥1,300</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section>
         <h1>Coffee menu</h1>
         <ul>
           <li>
+            <img src="images/sample_cafe1.jpg">
             <h2>ブレンドコーヒー</h2>
             <p>¥400</p>
           </li>
           <li>
+            <img src="images/sample_cafe2.jpg">
             <h2>アートラテ</h2>
             <p>¥500</p>
           </li>
           <li>
+            <img src="images/sample_cafe3.jpg">
             <h2>カフェラテ</h2>
             <p>¥450</p>
           </li>
           <li>
+            <img src="images/sample_cafe4.jpg">
             <h2>アイスコーヒー</h2>
             <p>¥350</p>
           </li>
@@ -78,8 +93,9 @@
     </article>
     <!-- ここまでMENU -->
     <!-- ここからACCESS -->
-    <article>
+    <article class="section_inner">
       <h1>ACCESS</h1>
+      <p>店舗情報</p>
       <dl>
         <dt>営業時間</dt>
         <dd>10:00 - 19:00<br>木曜日定休</dd>
@@ -91,14 +107,27 @@
           TEL:03-5459-1808
         </dd>
       </dl>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8623800608275!2d139.69228211552644!3d35.655762138975156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b55bb707eff%3A0x5f04575eb7aca63e!2z44CSMTUwLTAwNDQg5p2x5Lqs6YO95riL6LC35Yy65YaG5bGx55S677yS77yY4oiS77yUIE9iYSBCbGQuIEHppKg!5e0!3m2!1sja!2sjp!4v1654262007333!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
     <!-- ここまでACCESS -->
   </section>
   <footer>
     <nav>
       <!-- ナビゲーション -->
+      <ul>
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="#">
+          <li>Menu</li>
+        </a>
+        <a href="contact.html">
+          <li>Contact</li>
+        </a>
+        <a href="index.html"><img src="images/sample_logo_k.png"></a>
+      </ul>
     </nav>
+    <small>© DIVE INTO CODE Corp. All RIGHTS RESERVED.</small>
   </footer>
 </body>
-
 </html>
